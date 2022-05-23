@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<listeners>
+<listener class-name="com.salesforce.utilities.ListenersAndExtentReports" />
+</listeners>
+
+  	<parameter name ="TC_25_newContactPageLastNameTextBoxValue" value = "LastName" />
+   	<parameter name ="TC_25_newContactPageAccountNameTextBox" value = "United Oil &#038; Gas Corp." />    
+  	<parameter name="TC_27contactsPageRecentlyCreateddDropDownValue" value = "Recently Created" />
+  	<parameter name="TC_28_OptionToSelectInViewDropDown" value="My Contacts" />
+  	<parameter name="TC_30_contactsCreateNewViewViewUniqueNameTextBoxValue" value = "EFGH" />
+  	<parameter name ="TC_31_contactsCreateNewViewViewNameTextBoxValue" value = "ABCD" />
+  	<parameter name="TC_31_contactsCreateNewViewViewUniqueNameTextBoxValue" value = "EFGH" />
+    <parameter name ="TC_32_newContactPageLastNameTextBoxValue" value = "Indian" />
+   	<parameter name ="TC_32_newContactPageAccountNameTextBox" value = "Grand Hotels &#038; Resorts Ltd" />
+     
+  <test name="TestsForContactsPage_ChromeBrowser"  thread-count="3" >
+  	<parameter name ="browser" value = "chrome" />
+  	
+  	<parameter name ="TC_26_contactsCreateNewViewViewNameTextBoxValue" value = "Views" />
+  	<parameter name="TC_26_contactsCreateNewViewViewUniqueNameTextBoxValue" value = "UniqueViews" />
+    <classes>
+      <class name="com.salesforce.testScripts.Contacts"/>
+    </classes>
+  </test> <!-- TestsForContactsPage_ChromeBrowsers -->
+<!--
+   <test thread-count="3" parallel="tests" name="TestsForContactsPage_FireFoxBrowser">
+  	 	<parameter name ="browser" value = "firefox" />
+ 	 <parameter name ="TC_26_contactsCreateNewViewViewNameTextBoxValue" value = "Views" />
+ 	 <parameter name="TC_26_contactsCreateNewViewViewUniqueNameTextBoxValue" value = "UniqueViews1" />
+ 
+    <classes>
+      <class name="com.salesforce.testScripts.Contacts"/>
+    </classes>
+ 
+  </test>  < TestsForContactsPage_FireFoxBrowser --> 
+  <!--
+   <test thread-count="5" parallel="tests" name="TestsForContactsPage_SafariBrowser">
+  
+  <parameter name ="TC_26_contactsCreateNewViewViewNameTextBoxValue" value = "Views" />
+  <parameter name="TC_26_contactsCreateNewViewViewUniqueNameTextBoxValue" value = "UniqueViews2" />
+  
+    <classes>
+      <class name="com.salesforce.testScripts.Contacts"/>
+    </classes>
+  </test>  TestsForContactsPage_SafariBrowser -->
+</suite> <!-- Suite -->

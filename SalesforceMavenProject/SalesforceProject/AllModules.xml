@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.salesforce.utilities.ListenersAndExtentReports" />
+</listeners>
+<parameter name ="TC_25_newContactPageLastNameTextBoxValue" value = "LastName" />
+ 	<parameter name="TC14_saveReportReportName" value="Name"></parameter>
+	<parameter name="TC14_saveReportReportUniqueName" value="Name7"></parameter>
+   	<parameter name ="TC_25_newContactPageAccountNameTextBox" value = "United Oil &#038; Gas Corp." />    
+  	<parameter name="TC_27contactsPageRecentlyCreateddDropDownValue" value = "Recently Created" />
+  	<parameter name="TC_28_OptionToSelectInViewDropDown" value="My Contacts" />
+  	<parameter name="TC_30_contactsCreateNewViewViewUniqueNameTextBoxValue" value = "EFGH" />
+  	<parameter name ="TC_31_contactsCreateNewViewViewNameTextBoxValue" value = "ABCD" />
+  	<parameter name="TC_31_contactsCreateNewViewViewUniqueNameTextBoxValue" value = "EFGH" />
+    <parameter name ="TC_32_newContactPageLastNameTextBoxValue" value = "Indian" />
+   	<parameter name ="TC_32_newContactPageAccountNameTextBox" value = "Grand Hotels &#038; Resorts Ltd" />
+   	<parameter name ="TC_26_contactsCreateNewViewViewNameTextBoxValue" value = "Views" />
+  	<parameter name="TC_26_contactsCreateNewViewViewUniqueNameTextBoxValue" value = "UniqueViews" />
+  	<parameter name="TC34_LastNameValue" value="Abcd"	/>
+ 	<parameter name="TC35_selectedTabsListOptionToSelect_VisibleText" value="Libraries"	/>
+ 	<parameter name="TC36_calenderTimeLink" value="userCalender8PMLink"	/>
+ 	<parameter name="TC37_calenderTimeLink" value="userCalender4PMLink"	/>
+
+<test  name="TestsUsingChrome" thread-count="3">
+	  <parameter name="browser" value="chrome"	/>
+  
+    <classes>
+      <class name="com.salesforce.testScripts.SFDCLoginAutomationScripts"/>
+       <class name="com.salesforce.testScripts.UserMenuDropDownAutomationScripts"/>
+         <class name="com.salesforce.testScripts.Contacts"/>
+         <class name="com.salesforce.testScripts.CreateAccount"/>
+      <class name="com.salesforce.testScripts.LeadsPage"/>
+       <class name="com.salesforce.testScripts.RandomScenarios"/>
+     
+    </classes>
+  </test> <!-- TestsUsingFirefox -->
+ <!--
+  <test name="TestsUsingFirefox" thread-count="3">
+  <parameter name="browser" value="firefox"	/>
+    <classes>
+      
+    </classes>
+  </test> < TestsForCreateAccounts -->
+
+</suite> <!-- Suite -->

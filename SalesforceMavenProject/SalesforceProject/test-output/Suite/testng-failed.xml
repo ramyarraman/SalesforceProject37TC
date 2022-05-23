@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="TC37_calenderTimeLink" value="userCalender4PMLink"/>
+  <parameter name="TC14_saveReportReportName" value="Name"/>
+  <parameter name="TC14_saveReportReportUniqueName" value="Name7"/>
+  <parameter name="TC_31_contactsCreateNewViewViewUniqueNameTextBoxValue" value="EFGH"/>
+  <parameter name="TC_30_contactsCreateNewViewViewUniqueNameTextBoxValue" value="EFGH"/>
+  <parameter name="TC35_selectedTabsListOptionToSelect_VisibleText" value="Libraries"/>
+  <parameter name="TC34_LastNameValue" value="Abcd"/>
+  <parameter name="TC_32_newContactPageAccountNameTextBox" value="Grand Hotels &amp; Resorts Ltd"/>
+  <parameter name="TC36_calenderTimeLink" value="userCalender8PMLink"/>
+  <parameter name="TC_27contactsPageRecentlyCreateddDropDownValue" value="Recently Created"/>
+  <parameter name="TC_26_contactsCreateNewViewViewNameTextBoxValue" value="Views"/>
+  <parameter name="TC_25_newContactPageLastNameTextBoxValue" value="LastName"/>
+  <parameter name="TC_31_contactsCreateNewViewViewNameTextBoxValue" value="ABCD"/>
+  <parameter name="TC_32_newContactPageLastNameTextBoxValue" value="Indian"/>
+  <parameter name="TC_25_newContactPageAccountNameTextBox" value="United Oil &amp; Gas Corp."/>
+  <parameter name="TC_26_contactsCreateNewViewViewUniqueNameTextBoxValue" value="UniqueViews"/>
+  <parameter name="TC_28_OptionToSelectInViewDropDown" value="My Contacts"/>
+  <listeners>
+    <listener class-name="com.salesforce.utilities.ListenersAndExtentReports"/>
+  </listeners>
+  <test thread-count="5" name="TestsUsingChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.salesforce.testScripts.Contacts">
+        <methods>
+          <include name="TC31"/>
+          <include name="TC27"/>
+          <include name="TC29"/>
+          <include name="setUpForAllMethods"/>
+          <include name="TC28"/>
+          <include name="setUpForContactsTests"/>
+          <include name="TC30"/>
+          <include name="setUpTestAllTest"/>
+          <include name="TC32"/>
+        </methods>
+      </class> <!-- com.salesforce.testScripts.Contacts -->
+      <class name="com.salesforce.testScripts.SFDCLoginAutomationScripts">
+        <methods>
+          <include name="LoginToSalesForce2"/>
+          <include name="setUpForAllMethods"/>
+          <include name="setUpTestAllTest"/>
+        </methods>
+      </class> <!-- com.salesforce.testScripts.SFDCLoginAutomationScripts -->
+      <class name="com.salesforce.testScripts.UserMenuDropDownAutomationScripts">
+        <methods>
+          <include name="setUpForAllMethods"/>
+          <include name="TC06"/>
+          <include name="setUpTestAllTest"/>
+          <include name="setUpForUserMenuDropDown"/>
+        </methods>
+      </class> <!-- com.salesforce.testScripts.UserMenuDropDownAutomationScripts -->
+    </classes>
+  </test> <!-- TestsUsingChrome(failed) -->
+  <test thread-count="5" name="TestsUsingFirefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.salesforce.testScripts.CreateAccount">
+        <methods>
+          <include name="setUpForCreateAccountTests"/>
+          <include name="setUpForAllMethods"/>
+          <include name="tC12CreateNewView"/>
+          <include name="tC11CreateNewView"/>
+          <include name="setUpTestAllTest"/>
+        </methods>
+      </class> <!-- com.salesforce.testScripts.CreateAccount -->
+      <class name="com.salesforce.testScripts.RandomScenarios">
+        <methods>
+          <include name="TC35" invocation-numbers="0"/>
+          <include name="TC34" invocation-numbers="0"/>
+          <include name="TC37" invocation-numbers="0"/>
+          <include name="setUpForAllMethods"/>
+          <include name="setUpTestAllTest"/>
+          <include name="setUpForRandomScenarios"/>
+        </methods>
+      </class> <!-- com.salesforce.testScripts.RandomScenarios -->
+      <class name="com.salesforce.testScripts.LeadsPage">
+        <methods>
+          <include name="setUpLeadsPage"/>
+          <include name="setUpForAllMethods"/>
+          <include name="setUpTestAllTest"/>
+          <include name="TC21LeadsSelectView"/>
+        </methods>
+      </class> <!-- com.salesforce.testScripts.LeadsPage -->
+    </classes>
+  </test> <!-- TestsUsingFirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

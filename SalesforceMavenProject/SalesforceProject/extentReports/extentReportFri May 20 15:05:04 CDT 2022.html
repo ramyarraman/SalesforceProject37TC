@@ -1,0 +1,2059 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Test Execution Report</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Salesforce Automation Tests</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>May 20, 2022 03:05:04 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='71.429%'><span class='strong'>10</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>4</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='5.495%'><span class='strong'>10</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='4.396%'>8</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='90.11%'>164</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>TC14</span>
+						<span class='test-time'>May 20, 2022 03:05:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:05:04 PM</span>
+	<span class='label end-time'>May 20, 2022 03:05:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 40s+486ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:12 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:12 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:17 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Home Page ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:20 PM</td>
+					<td class='step-details'>clicked on AccountsLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:25 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Accounts: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:25 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:28 PM</td>
+					<td class='step-details'>clicked on accountsPageAccountsWithLastActivityMoreThan30</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:33 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Unsaved Report ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:33 PM</td>
+					<td class='step-details'>clicked on unsavedReportsPageDateField</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:33 PM</td>
+					<td class='step-details'>clicked on unsavedReportsPageDateFieldCreatedDateOption</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:34 PM</td>
+					<td class='step-details'>clicked on unsavedunsavedReportsPageFromFieldDatePicker</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:34 PM</td>
+					<td class='step-details'>clicked on unsavedunsavedReportsPageFromFieldTodaySelectedDateOption</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:34 PM</td>
+					<td class='step-details'>clicked on unsavedunsavedReportsPageToFieldDatePicker</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:34 PM</td>
+					<td class='step-details'>clicked on unsavedunsavedReportsPageToFieldMonthOption</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:34 PM</td>
+					<td class='step-details'>Double clicked on Todays month</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:35 PM</td>
+					<td class='step-details'>clicked on unsavedunsavedReportsPageToFieldTodaySelectedDateOption</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:35 PM</td>
+					<td class='step-details'>clicked on unsavedunsavedReportsPageSaveButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:35 PM</td>
+					<td class='step-details'>clicked on saveReportReportUniqueName</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:39 PM</td>
+					<td class='step-details'>clicked on saveReportSaveAndRunButton</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:05:42 PM</td>
+					<td class='step-details'><span class='label white-text green'>TC14 Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:44 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC14_TodaysReportListFri May 20 15:05:35 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC14_TodaysReportListFri May 20 15:05:35 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC14_TodaysReportListFri May 20 15:05:35 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC14_ReportPageFri May 20 15:05:42 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC14_ReportPageFri May 20 15:05:42 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC14_ReportPageFri May 20 15:05:42 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>tC10CreateAccount</span>
+						<span class='test-time'>May 20, 2022 03:05:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:05:44 PM</span>
+	<span class='label end-time'>May 20, 2022 03:06:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 35s+193ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:53 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:53 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:05:58 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Home Page ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:01 PM</td>
+					<td class='step-details'>clicked on AccountsLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:06 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Accounts: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:06 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:09 PM</td>
+					<td class='step-details'>clicked on newAccount</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:14 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Account Edit: New Account ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:15 PM</td>
+					<td class='step-details'>clicked on accountNameTextBox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:17 PM</td>
+					<td class='step-details'>clicked on accountSaveButton</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:06:17 PM</td>
+					<td class='step-details'><span class='label white-text green'>tC10CreateAccount Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:19 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/tC10CreateAccount_AccountNameAndPageUpdateFri May 20 15:06:17 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/tC10CreateAccount_AccountNameAndPageUpdateFri May 20 15:06:17 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/tC10CreateAccount_AccountNameAndPageUpdateFri May 20 15:06:17 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>tC11CreateNewView</span>
+						<span class='test-time'>May 20, 2022 03:06:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:06:19 PM</span>
+	<span class='label end-time'>May 20, 2022 03:06:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+712ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:27 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:27 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:32 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Home Page ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:35 PM</td>
+					<td class='step-details'>clicked on AccountsLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:40 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Accounts: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:40 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:41 PM</td>
+					<td class='step-details'>clicked on createNewViewLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:41 PM</td>
+					<td class='step-details'>clicked on viewUniqueName</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:42 PM</td>
+					<td class='step-details'>clicked on createNewViewSaveButton</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:06:43 PM</td>
+					<td class='step-details'><span class='label white-text green'>tC11CreateNewView Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:45 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/tC11CreateNewView_viewSelectioninDropDownFri May 20 15:06:43 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/tC11CreateNewView_viewSelectioninDropDownFri May 20 15:06:43 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/tC11CreateNewView_viewSelectioninDropDownFri May 20 15:06:43 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>TC13MergeAccounts</span>
+						<span class='test-time'>May 20, 2022 03:06:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:06:45 PM</span>
+	<span class='label end-time'>May 20, 2022 03:07:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 46s+469ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:53 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:53 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:06:58 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Home Page ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:00 PM</td>
+					<td class='step-details'>clicked on AccountsLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:05 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Accounts: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:06 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:06 PM</td>
+					<td class='step-details'>clicked on accountsPageToolsMergeAccounts</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:06 PM</td>
+					<td class='step-details'>clicked on mergeMyAccountsFindAccountsButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:07 PM</td>
+					<td class='step-details'>clicked on mergeMyAccountsFirstCheckBox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:07 PM</td>
+					<td class='step-details'>clicked on mergeMyAccountsSecondCheckBox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:07 PM</td>
+					<td class='step-details'>clicked on mergeMyAccountsNextButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:12 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Merge My Accounts ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:13 PM</td>
+					<td class='step-details'>clicked on mergeMyAccountsStep2MergeButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:13 PM</td>
+					<td class='step-details'>Message in Alert: These records will be merged into one record using the selected values. Merging can't be undone. Proceed with the record merge?</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:23 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Accounts: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:24 PM</td>
+					<td class='step-details'>Option Selected:Recently Viewed Accounts</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:07:29 PM</td>
+					<td class='step-details'><span class='label white-text green'>TC13MergeAccounts Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:32 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC13MergeAccounts_Step2PageFri May 20 15:07:13 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC13MergeAccounts_Step2PageFri May 20 15:07:13 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC13MergeAccounts_Step2PageFri May 20 15:07:13 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC13MergeAccounts_AccountsPageAfterMergeFri May 20 15:07:29 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC13MergeAccounts_AccountsPageAfterMergeFri May 20 15:07:29 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/CreateAccounts/TC13MergeAccounts_AccountsPageAfterMergeFri May 20 15:07:29 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>tC12CreateNewView</span>
+						<span class='test-time'>May 20, 2022 03:07:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:07:32 PM</span>
+	<span class='label end-time'>May 20, 2022 03:08:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 51s+539ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:39 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:39 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:45 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Home Page ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:47 PM</td>
+					<td class='step-details'>clicked on AccountsLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:07:52 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Home Page ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:08:23 PM</td>
+					<td class='step-details'><span class='label white-text yellow'>tC12CreateNewView Skipped</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:23 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>TC20LeadsTab</span>
+						<span class='test-time'>May 20, 2022 03:08:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:08:23 PM</span>
+	<span class='label end-time'>May 20, 2022 03:08:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+230ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:31 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:31 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:33 PM</td>
+					<td class='step-details'>clicked on leadsPageLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:38 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Leads: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:39 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:08:39 PM</td>
+					<td class='step-details'><span class='label white-text green'>TC20LeadsTab Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:41 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC20LeadsTab_LeadsPageFri May 20 15:08:39 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC20LeadsTab_LeadsPageFri May 20 15:08:39 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC20LeadsTab_LeadsPageFri May 20 15:08:39 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>TC21LeadsSelectView</span>
+						<span class='test-time'>May 20, 2022 03:08:41 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:08:41 PM</span>
+	<span class='label end-time'>May 20, 2022 03:09:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+946ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:49 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:49 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:52 PM</td>
+					<td class='step-details'>clicked on leadsPageLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:57 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Leads: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:08:58 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>3:08:58 PM</td>
+					<td class='step-details'><span class='label white-text red'>TC21LeadsSelectView Failed</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>3:08:58 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Accounts: Home ~ Salesforce - Developer Edition] but found [Home Page ~ Salesforce - Developer Edition]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.salesforce.testScripts.LeadsPage.TC21LeadsSelectView(LeadsPage.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:00 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.LeadsPage/TC21LeadsSelectViewFri May 20 15:08:58 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.LeadsPage/TC21LeadsSelectViewFri May 20 15:08:58 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.LeadsPage/TC21LeadsSelectViewFri May 20 15:08:58 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>TC22DefaultViewAndTC23</span>
+						<span class='test-time'>May 20, 2022 03:09:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:09:00 PM</span>
+	<span class='label end-time'>May 20, 2022 03:09:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 35s+150ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:08 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:08 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:10 PM</td>
+					<td class='step-details'>clicked on leadsPageLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:15 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Leads: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:15 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:15 PM</td>
+					<td class='step-details'>Option Selected:Today's Leads</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:16 PM</td>
+					<td class='step-details'>clicked on userMenu</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:16 PM</td>
+					<td class='step-details'>clicked on logout</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:20 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:20 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:25 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Home Page ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:25 PM</td>
+					<td class='step-details'>clicked on leadsPageLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:30 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Leads: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:33 PM</td>
+					<td class='step-details'>clicked on leadsPageViewDropDownGoButton</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:09:33 PM</td>
+					<td class='step-details'><span class='label white-text green'>TC22DefaultViewAndTC23 Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:35 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC22DefaultViewAndTC23_BeforeLoginFri May 20 15:09:16 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC22DefaultViewAndTC23_BeforeLoginFri May 20 15:09:16 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC22DefaultViewAndTC23_BeforeLoginFri May 20 15:09:16 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC22DefaultViewAndTC23_SelectedViewPageFri May 20 15:09:33 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC22DefaultViewAndTC23_SelectedViewPageFri May 20 15:09:33 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC22DefaultViewAndTC23_SelectedViewPageFri May 20 15:09:33 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>TC24</span>
+						<span class='test-time'>May 20, 2022 03:09:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:09:35 PM</span>
+	<span class='label end-time'>May 20, 2022 03:09:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+995ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:43 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:43 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:46 PM</td>
+					<td class='step-details'>clicked on leadsPageLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:51 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Leads: Home ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:51 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:51 PM</td>
+					<td class='step-details'>clicked on leadsPageNewButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:53 PM</td>
+					<td class='step-details'>clicked on newLeadsPageSaveButton</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:09:53 PM</td>
+					<td class='step-details'><span class='label white-text green'>TC24 Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:09:55 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC24_newLeadsPageFri May 20 15:09:53 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC24_newLeadsPageFri May 20 15:09:53 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/Leads/TC24_newLeadsPageFri May 20 15:09:53 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>TC33</span>
+						<span class='test-time'>May 20, 2022 03:09:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:09:55 PM</span>
+	<span class='label end-time'>May 20, 2022 03:10:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+582ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:03 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:03 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:06 PM</td>
+					<td class='step-details'>clicked on homePageLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:11 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:11 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:15 PM</td>
+					<td class='step-details'>clicked on homePageNameLink</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:10:15 PM</td>
+					<td class='step-details'><span class='label white-text green'>TC33 Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:18 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC33_homePageHasUserNameLinkFri May 20 15:10:12 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC33_homePageHasUserNameLinkFri May 20 15:10:12 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC33_homePageHasUserNameLinkFri May 20 15:10:12 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC33_userProfilePageFri May 20 15:10:15 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC33_userProfilePageFri May 20 15:10:15 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC33_userProfilePageFri May 20 15:10:15 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>TC34</span>
+						<span class='test-time'>May 20, 2022 03:10:18 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:10:18 PM</span>
+	<span class='label end-time'>May 20, 2022 03:10:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+761ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:26 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:26 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:29 PM</td>
+					<td class='step-details'>clicked on homePageLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:34 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:35 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:36 PM</td>
+					<td class='step-details'>clicked on homePageNameLink</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>3:10:36 PM</td>
+					<td class='step-details'><span class='label white-text red'>TC34 Failed</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>3:10:36 PM</td>
+					<td class='step-details'><textarea>org.openqa.selenium.ElementNotInteractableException: Element <a class="contactInfoLaunch editLink" href="javascript:void(0);"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ramyas-MacBook-Air.local', ip: 'fe80:0:0:0:108e:dc1c:36cb:588e%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.0.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220428192727, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 2161, moz:profile: /var/folders/nc/rksk1wv5117..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 21.1.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4f6e9cb9-bafe-4d5f-9216-a39230c6fc3a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.salesforce.base.BaseMethods.clickOnElement(BaseMethods.java:385)
+	at com.salesforce.testScripts.RandomScenarios.TC34(RandomScenarios.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:39 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC34_userProfilePageFri May 20 15:10:36 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC34_userProfilePageFri May 20 15:10:36 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC34_userProfilePageFri May 20 15:10:36 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.RandomScenarios/TC34Fri May 20 15:10:36 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.RandomScenarios/TC34Fri May 20 15:10:36 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.RandomScenarios/TC34Fri May 20 15:10:36 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>TC35</span>
+						<span class='test-time'>May 20, 2022 03:10:39 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:10:39 PM</span>
+	<span class='label end-time'>May 20, 2022 03:11:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 47s+844ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:47 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:47 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:52 PM</td>
+					<td class='step-details'>clicked on addTabPlusSymbol</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:57 PM</td>
+					<td class='step-details'>Actual Title Displayed --  All Tabs ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:10:58 PM</td>
+					<td class='step-details'>clicked on allTabCustomizeMyTabsButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:03 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Customize My Tabs ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:06 PM</td>
+					<td class='step-details'>Option Selected:Libraries</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:07 PM</td>
+					<td class='step-details'>clicked on removeArrow</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:08 PM</td>
+					<td class='step-details'>clicked on customizeMyTabsSaveButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:13 PM</td>
+					<td class='step-details'>Actual Title Displayed --  All Tabs ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:13 PM</td>
+					<td class='step-details'>clicked on userMenu</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:13 PM</td>
+					<td class='step-details'>clicked on logout</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:20 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:20 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:22 PM</td>
+					<td class='step-details'>clicked on addTabPlusSymbol</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:23 PM</td>
+					<td class='step-details'>clicked on allTabCustomizeMyTabsButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:23 PM</td>
+					<td class='step-details'>Option Selected:Libraries</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:23 PM</td>
+					<td class='step-details'>clicked on addArrow</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:24 PM</td>
+					<td class='step-details'>clicked on customizeMyTabsSaveButton</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>3:11:24 PM</td>
+					<td class='step-details'><span class='label white-text red'>TC35 Failed</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>3:11:24 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Accounts: Home ~ Salesforce - Developer Edition] but found [Home Page ~ Salesforce - Developer Edition]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.salesforce.testScripts.RandomScenarios.TC35(RandomScenarios.java:177)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:27 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_OptionRemovedFromSelectedTabs_AddedToAvailableFri May 20 15:11:07 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_OptionRemovedFromSelectedTabs_AddedToAvailableFri May 20 15:11:07 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_OptionRemovedFromSelectedTabs_AddedToAvailableFri May 20 15:11:07 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_OptionRemovedFromSelectedTabs_OptionNotAvailableInTabBarAllTabsPageFri May 20 15:11:13 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_OptionRemovedFromSelectedTabs_OptionNotAvailableInTabBarAllTabsPageFri May 20 15:11:13 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_OptionRemovedFromSelectedTabs_OptionNotAvailableInTabBarAllTabsPageFri May 20 15:11:13 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_afterLogoutFri May 20 15:11:16 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_afterLogoutFri May 20 15:11:16 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_afterLogoutFri May 20 15:11:16 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_OptionRemovedFromSelectedTabs_OptionNotAvailableInTabBarAfterReLoginFri May 20 15:11:20 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_OptionRemovedFromSelectedTabs_OptionNotAvailableInTabBarAfterReLoginFri May 20 15:11:20 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC35_OptionRemovedFromSelectedTabs_OptionNotAvailableInTabBarAfterReLoginFri May 20 15:11:20 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.RandomScenarios/TC35Fri May 20 15:11:24 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.RandomScenarios/TC35Fri May 20 15:11:24 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.RandomScenarios/TC35Fri May 20 15:11:24 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>TC36</span>
+						<span class='test-time'>May 20, 2022 03:11:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:11:27 PM</span>
+	<span class='label end-time'>May 20, 2022 03:11:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+779ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:34 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:34 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:38 PM</td>
+					<td class='step-details'>clicked on homePageLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:43 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:43 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:44 PM</td>
+					<td class='step-details'>clicked on homePageDateLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:45 PM</td>
+					<td class='step-details'>clicked on calenderTimeLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:50 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Calendar: New Event ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:50 PM</td>
+					<td class='step-details'>clicked on userCalenderNewEventSubjectComboIcon</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:55 PM</td>
+					<td class='step-details'>Actual Title Displayed --  ComboBox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:55 PM</td>
+					<td class='step-details'>clicked on userCalenderComboBoxOtherLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:56 PM</td>
+					<td class='step-details'>clicked on userCalenderNewEventEndTimeTextBox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:57 PM</td>
+					<td class='step-details'>clicked on userCalenderNewEvenSaveButton</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:11:57 PM</td>
+					<td class='step-details'><span class='label white-text green'>TC36 Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:11:59 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_calenderForUserNamePageFri May 20 15:11:44 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_calenderForUserNamePageFri May 20 15:11:44 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_calenderForUserNamePageFri May 20 15:11:44 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_calenderForUserNamePage_SubjectTextBoxEnteredAndComBoBoxClosedFri May 20 15:11:55 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_calenderForUserNamePage_SubjectTextBoxEnteredAndComBoBoxClosedFri May 20 15:11:55 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_calenderForUserNamePage_SubjectTextBoxEnteredAndComBoBoxClosedFri May 20 15:11:55 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_userCalenderNewEventEndTimeTextBoxSelectionFri May 20 15:11:56 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_userCalenderNewEventEndTimeTextBoxSelectionFri May 20 15:11:56 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_userCalenderNewEventEndTimeTextBoxSelectionFri May 20 15:11:56 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_calenderForUserNamePageWithAddedEventFri May 20 15:11:57 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_calenderForUserNamePageWithAddedEventFri May 20 15:11:57 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC36_calenderForUserNamePageWithAddedEventFri May 20 15:11:57 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>TC37</span>
+						<span class='test-time'>May 20, 2022 03:11:59 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 20, 2022 03:11:59 PM</span>
+	<span class='label end-time'>May 20, 2022 03:12:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+642ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:07 PM</td>
+					<td class='step-details'>clicked on loginButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:07 PM</td>
+					<td class='step-details'>Login clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:10 PM</td>
+					<td class='step-details'>clicked on homePageLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:15 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:16 PM</td>
+					<td class='step-details'>clicked on closePopUp</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:16 PM</td>
+					<td class='step-details'>clicked on homePageDateLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:17 PM</td>
+					<td class='step-details'>clicked on calenderTimeLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:22 PM</td>
+					<td class='step-details'>Actual Title Displayed --  Calendar: New Event ~ Salesforce - Developer Edition</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:23 PM</td>
+					<td class='step-details'>clicked on userCalenderNewEventSubjectComboIcon</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:28 PM</td>
+					<td class='step-details'>Actual Title Displayed --  ComboBox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:28 PM</td>
+					<td class='step-details'>clicked on userCalenderComboBoxOtherLink</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:28 PM</td>
+					<td class='step-details'>clicked on userCalenderNewEventEndTimeTextBox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:29 PM</td>
+					<td class='step-details'>clicked on userCalenderNewEventRecurrenceCheckBox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:29 PM</td>
+					<td class='step-details'>clicked on userCalenderNewEventRecurrenceFrequencyWeeklyRadioButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:30 PM</td>
+					<td class='step-details'>clicked on userCalenderNewEvenSaveButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:31 PM</td>
+					<td class='step-details'>clicked on userCalenderPageMonthViewIcon</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>3:12:31 PM</td>
+					<td class='step-details'><span class='label white-text red'>TC37 Failed</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>3:12:31 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Accounts: Home ~ Salesforce - Developer Edition] but found [Home Page ~ Salesforce - Developer Edition],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.salesforce.testScripts.RandomScenarios.TC37(RandomScenarios.java:487)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>3:12:34 PM</td>
+					<td class='step-details'>All Drivers closed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_calenderForUserNamePageFri May 20 15:12:17 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_calenderForUserNamePageFri May 20 15:12:17 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_calenderForUserNamePageFri May 20 15:12:17 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_calenderForUserNamePage_SubjectTextBoxEnteredAndComBoBoxClosedFri May 20 15:12:28 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_calenderForUserNamePage_SubjectTextBoxEnteredAndComBoBoxClosedFri May 20 15:12:28 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_calenderForUserNamePage_SubjectTextBoxEnteredAndComBoBoxClosedFri May 20 15:12:28 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_userCalenderNewEventEndTimeTextBoxSelectionFri May 20 15:12:28 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_userCalenderNewEventEndTimeTextBoxSelectionFri May 20 15:12:28 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_userCalenderNewEventEndTimeTextBoxSelectionFri May 20 15:12:28 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_userCalenderNewEventEndTimeUpdateAndRecurrenceFri May 20 15:12:29 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_userCalenderNewEventEndTimeUpdateAndRecurrenceFri May 20 15:12:29 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_userCalenderNewEventEndTimeUpdateAndRecurrenceFri May 20 15:12:29 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_calenderForUserNamePageWithAddedEventFri May 20 15:12:30 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_calenderForUserNamePageWithAddedEventFri May 20 15:12:30 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_calenderForUserNamePageWithAddedEventFri May 20 15:12:30 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_userCalenderPageMonthViewIconWithAddedDetailsFri May 20 15:12:31 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_userCalenderPageMonthViewIconWithAddedDetailsFri May 20 15:12:31 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/RandomScenarios/TC37_userCalenderPageMonthViewIconWithAddedDetailsFri May 20 15:12:31 CDT 2022'></li>
+								<li><img data-featherlight='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.RandomScenarios/TC37Fri May 20 15:12:32 CDT 2022' width='10%' src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.RandomScenarios/TC37Fri May 20 15:12:32 CDT 2022' data-src='/Users/ramyabharath/eclipse-workspace/SalesforceProject/resources/listenerScreenShot/FailedCasesScreenshot/class com.salesforce.testScripts.RandomScenarios/TC37Fri May 20 15:12:32 CDT 2022'></li>
+							</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>May 20, 2022 03:08:41 PM</td>
+                                                        <td class='linked' test-id='20'>TC21LeadsSelectView</td>
+                                                        <td><pre><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Accounts: Home ~ Salesforce - Developer Edition] but found [Home Page ~ Salesforce - Developer Edition]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.salesforce.testScripts.LeadsPage.TC21LeadsSelectView(LeadsPage.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 20, 2022 03:10:39 PM</td>
+                                                        <td class='linked' test-id='25'>TC35</td>
+                                                        <td><pre><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Accounts: Home ~ Salesforce - Developer Edition] but found [Home Page ~ Salesforce - Developer Edition]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.salesforce.testScripts.RandomScenarios.TC35(RandomScenarios.java:177)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 20, 2022 03:11:59 PM</td>
+                                                        <td class='linked' test-id='27'>TC37</td>
+                                                        <td><pre><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Accounts: Home ~ Salesforce - Developer Edition] but found [Home Page ~ Salesforce - Developer Edition],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.salesforce.testScripts.RandomScenarios.TC37(RandomScenarios.java:487)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>May 20, 2022 03:10:18 PM</td>
+                                                        <td class='linked' test-id='24'>TC34</td>
+                                                        <td><pre><textarea>org.openqa.selenium.ElementNotInteractableException: Element <a class="contactInfoLaunch editLink" href="javascript:void(0);"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ramyas-MacBook-Air.local', ip: 'fe80:0:0:0:108e:dc1c:36cb:588e%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.0.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220428192727, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 2161, moz:profile: /var/folders/nc/rksk1wv5117..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 21.1.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4f6e9cb9-bafe-4d5f-9216-a39230c6fc3a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.salesforce.base.BaseMethods.clickOnElement(BaseMethods.java:385)
+	at com.salesforce.testScripts.RandomScenarios.TC34(RandomScenarios.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>14</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>182</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>May 20, 2022 03:05:04 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>May 20, 2022 03:12:34 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 7m 30s+525ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>Host Name</td>
+								<td>Salesforce</td>
+							</tr>
+							<tr>
+								<td>Environment</td>
+								<td>Automation Testing</td>
+							</tr>
+							<tr>
+								<td>User Name</td>
+								<td>Ramya</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 10,
+				failParent: 4,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 4,
+				
+				passChild: 10,
+				failChild: 8,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 164,
+				exceptionsChild: 8,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

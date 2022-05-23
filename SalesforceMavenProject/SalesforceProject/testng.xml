@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="InitialTrySuite">
+  <test thread-count="5" name="TestForCreateAccountLoginUserMenu">
+    <classes>
+      <class name="com.salesforce.testScripts.CreateAccount"/>
+      <class name="com.salesforce.testScripts.UserMenuDropDownAutomationScripts"/>
+      <class name="com.salesforce.testScripts.SFDCLoginAutomationScripts"/>
+    </classes>
+  </test> <!-- TestForCreateAccountLoginUserMenu -->
+</suite> <!-- InitialTrySuite -->

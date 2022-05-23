@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests">
+<listeners>
+<listener class-name="com.salesforce.utilities.ListenersAndExtentReports" />
+</listeners>
+ 	<parameter name="TC34_LastNameValue" value="Abcd"	/>
+ 	<parameter name="TC35_selectedTabsListOptionToSelect_VisibleText" value="Libraries"	/>
+ 	<parameter name="TC36_calenderTimeLink" value="userCalender8PMLink"	/>
+ 	<parameter name="TC37_calenderTimeLink" value="userCalender4PMLink"	/>
+  <test  thread-count="5" name="TestsForRandomScenarios_UsingChrome">
+  	<parameter name="browser" value="chrome" />
+    <classes>
+      <class name="com.salesforce.testScripts.RandomScenarios"/>
+    </classes>
+   
+  </test> <!-- TestsForRandomScenarios --><!--
+  <test thread-count="5" name="TestsForRandomScenarios_UsingFireFox">
+  	<parameter name="browser" value="firefox"	/>
+    <classes>
+      <class name="com.salesforce.testScripts.RandomScenarios"/>
+    </classes>
+  </test>  < TestsForRandomScenarios -->
+</suite> <!-- Suite -->

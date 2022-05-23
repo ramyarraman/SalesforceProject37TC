@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [InitialTrySuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestForCreateAccountLoginUserMenu(failed)">
+    <classes>
+      <class name="com.salesforce.testScripts.SFDCLoginAutomationScripts">
+        <methods>
+          <include name="LoginToSalesForce2"/>
+          <include name="actionAfterTest"/>
+        </methods>
+      </class> <!-- com.salesforce.testScripts.SFDCLoginAutomationScripts -->
+    </classes>
+  </test> <!-- TestForCreateAccountLoginUserMenu(failed) -->
+</suite> <!-- Failed suite [InitialTrySuite] -->
