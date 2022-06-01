@@ -18,7 +18,7 @@ import com.salesforce.utilities.SalesForceConstants;
 public class SFDCLoginAutomationScripts extends BaseMethods{
 
 	//SFDC Login test cases begin..................................................................................................
-	@Test(priority=0,enabled=true)	
+	@Test(priority=0,enabled=false)	
 	public static void LoginErrorMessage1() throws TestFailUserException, IOException{
 
 		//Test case Condition 1..........................................................
@@ -72,11 +72,14 @@ public class SFDCLoginAutomationScripts extends BaseMethods{
 		String pageTitle = getPageTitle();
 		//Test case Condition 2..........................................................
 		captureScreenshot("SFDCLogin/LoginToSalesForce2_WelcomeToFreeTrial");
-
+//		try {
 		Assert.assertEquals(pageTitle,"Welcome to your free trial should be displayed","Welcome to your free trial not displayed,Test Failed");
+//		}catch(Error e) {
+//			report.logTestFailedWithError(e);
+//		}
 			
 	}
-	@Test(priority=1,enabled=true)
+	@Test(priority=1,enabled=false)
 	public static void CheckRemeberMe3() throws TestFailUserException, IOException {
 
 		//Test case Condition 1..........................................................
@@ -123,7 +126,7 @@ public class SFDCLoginAutomationScripts extends BaseMethods{
 
 	//password reset
 
-	@Test(priority=4,enabled=true)
+	@Test(priority=4,enabled=false)
 	public static void ForgotPassword4A() throws TestFailUserException, IOException {
 
 		//Test case Condition 1..........................................................
@@ -152,7 +155,7 @@ public class SFDCLoginAutomationScripts extends BaseMethods{
 		
 	}
 
-	@Test(priority=2,enabled=true)
+	@Test(priority=2,enabled=false)
 	public void forgotPassword4B() throws TestFailUserException, IOException {
 
 //		//Test case Condition 1..........................................................
